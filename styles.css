@@ -1,15 +1,17 @@
 body
 {
-	width: 1000px;
-	height: 600px;
+	width: 600px;
+	height: 500px;
 	box-shadow: 0px 0px 5px black;
 	padding: 10px;
+	border: 1px solid black;
+	border-radius: 10px;
 	
 	position: absolute;
 	left: 50%;
 	top: 50%;
-	margin-left: -500px;
-	margin-top: -315px;
+	margin-left: -310px;
+	margin-top: -260px;
 }
 
 table
@@ -21,7 +23,7 @@ table
 nav
 {
 	float: right;
-	width: 600px;
+	width: 200px;
 }
 
 td, #exemple_checked
@@ -75,9 +77,17 @@ td, #exemple_checked
 
 #txt_success
 {
-	font-family: verdana;
 	color: #ffea00;
+	font-family: verdana;
 	font-weight: bold;
 	font-size: x-large;
 	text-shadow: 2px 2px 0px #8F7D00, 0px 0px 5px #000, 0px 0px 2px black;
+}
+
+#img_mouse
+{
+	width: 150px;
+	position: absolute;
+	bottom: 30px;
+	right: 30px;
 }

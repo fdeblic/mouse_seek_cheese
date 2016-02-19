@@ -8,24 +8,29 @@
 	
 	<body>
 		<nav>
-			<button onclick='move(UP)' style='margin-left: 65px'>UP</button><br>
+			<button onclick='move(UP)' style='margin-left: 65px'>UP</button> <br>
 			<button onclick='move(LEFT)'>LEFT</button>
 			<button onclick='move(DOWN)'>DOWN</button>
-			<button onclick='move(RIGHT)'>RIGHT</button><br><br>
+			<button onclick='move(RIGHT)'>RIGHT</button>
 			
-			<button onclick='seek_cheese()'>Chercher le fromage</button>
+			<br><br>
+			
+			<button onclick='seek_cheese()'>Seek the cheese</button>
 			<button onclick='reset_check()'>Reset</button>
 			
-			<hr>Légende :<br><br>
-			<div id='exemple_mouse'></div>Souris<br>
-			<div id='exemple_cheese'></div>Fromage<br>
-			<div id='exemple_checked'></div>Case déjà visitée<br>
+			<hr>Legend :<br><br>
+			<div id='exemple_mouse'></div>Mouse<br>
+			<div id='exemple_cheese'></div>Cheese<br>
+			<div id='exemple_checked'></div>Checked case<br>
 			
 			<br>
 			
-			<p id='txt_success' style='visibility:hidden'>Succès !</p>
+			<p id='txt_success' style='visibility:hidden'>Success !</p>
+			
+			<img id='img_mouse' src='https://upload.wikimedia.org/wikipedia/commons/5/55/Grayscale_mouse.svg'>
 		</nav>
 		
+		<!-- Labyrinth -->
 		<table>
 			<tr>  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>  </tr>
 			<tr>  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>  </tr>
