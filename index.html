@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset='utf-8' />
+		<title> La souris et le fromage </title>
+		<link rel='stylesheet' href='styles.css'/>
+	</head>
+	
+	<body>
+		<nav>
+			<button onclick='move(UP)' style='margin-left: 65px'>UP</button><br>
+			<button onclick='move(LEFT)'>LEFT</button>
+			<button onclick='move(DOWN)'>DOWN</button>
+			<button onclick='move(RIGHT)'>RIGHT</button><br><br>
+			
+			<button onclick='seek_cheese()'>Chercher le fromage</button>
+			<button onclick='reset_check()'>Reset</button>
+			
+			<hr>Légende :<br><br>
+			<div id='exemple_mouse'></div>Souris<br>
+			<div id='exemple_cheese'></div>Fromage<br>
+			<div id='exemple_checked'></div>Case déjà visitée<br>
+			
+			<br>
+			
+			<p id='txt_success' style='visibility:hidden'>Succès !</p>
+		</nav>
+		
+		<table>
+			<tr>  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>  </tr>
+			<tr>  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>  </tr>
+			<tr>  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>  </tr>
+			<tr>  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>  </tr>
+			<tr>  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>  </tr>
+			<tr>  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>  </tr>
+			<tr>  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>  </tr>
+			<tr>  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>  </tr>
+			<tr>  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>  </tr>
+		</table>
+		
+	</body>
+	
+	<script src='script.js'></script>
+</html>

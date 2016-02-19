@@ -1,0 +1,83 @@
+body
+{
+	width: 1000px;
+	height: 600px;
+	box-shadow: 0px 0px 5px black;
+	padding: 10px;
+	
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -500px;
+	margin-top: -315px;
+}
+
+table
+{
+	border-collapse: collapse;
+	border: 1px black solid;
+}
+
+nav
+{
+	float: right;
+	width: 600px;
+}
+
+td, #exemple_checked
+{
+	width: 50px;
+	height: 50px;
+	background-color: #eeeeee;
+}
+
+.u
+{
+	border-top: 1px solid black;
+}
+.d
+{
+	border-bottom: 1px solid black;
+}
+.l
+{
+	border-left: 1px solid black;
+}
+.r
+{
+	border-right: 1px solid black;
+}
+
+.checked, #exemple_checked
+{
+	box-shadow: 0px 0px 5px red inset;
+}
+
+#mouse, #exemple_mouse
+{
+	background-color: grey;
+}
+
+#cheese, #exemple_cheese
+{
+	background-color: yellow;
+}
+
+#exemple_mouse, #exemple_cheese, #exemple_checked
+{
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	text-align: center;
+	border: 1px black solid;
+	margin-right: 5px;
+}
+
+#txt_success
+{
+	font-family: verdana;
+	color: #ffea00;
+	font-weight: bold;
+	font-size: x-large;
+	text-shadow: 2px 2px 0px #8F7D00, 0px 0px 5px #000, 0px 0px 2px black;
+}
