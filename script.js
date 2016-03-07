@@ -22,7 +22,8 @@ var pos_y, cheese_y;
 var size_x;
 var size_y;
 
-
+// history of moves
+var stack = new Array();
 
 
 /////////////////////////////////
@@ -75,11 +76,12 @@ function seek_cheese()
 	if (success())
 	{
 		document.getElementById('txt_success').style.visibility = "visible";
-		return true;
+		return;
 	}
 	
+	var ok = false;
 	check_position();
-	for (var dir=1; dir<=8 ; dir*=2) // UP, DOWN, LEFT then RIGHT
+	for (var dir=1; dir<=8 && ! ok ; dir*=2) // UP, DOWN, LEFT then RIGHT
 	{
 		if (move(dir))
 		{
@@ -87,25 +89,22 @@ function seek_cheese()
 				move(opposit_direction(dir)); // ...cancel the move
 			else
 			{
+			  ok = true;
+			  stack.push(dir)
 				if (success())
 				{
 					document.getElementById('txt_success').style.visibility = "visible";
-					return true;
 				}
 				else
 				{
 					check_position();
-					alert("OK to continue");
-					
-					if (seek_cheese())
-						return true;
-					else
-						move(opposit_direction(dir));
 				}
 			}
 		}
 	}
-	return false;
+	
+	if(! ok)
+	move(opposit_direction(stack.pop()));
 }
 
 // Returns an integer between a et b
