@@ -5,3 +5,5 @@ Riddle proposed by big brother : a mouse seeks a cheese into a labyrinth. You're
 - **move(direction)** which returns if the movement succeeded (no wall in stead)
 
 The solution used includes recursion.
+
+![Screenshot](screenshot.png)
